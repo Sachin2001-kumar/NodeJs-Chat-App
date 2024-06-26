@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    background-image: linear-gradient(to bottom right, #ffffff, #6d27ef);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 80px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Container */
+.container {
+    width: 80%; /* Adjusted width */
+    max-width: 600px; /* Maximum width */
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    height: 40vh; /* Reduced height */
+    border: none;
+    padding: 20px;
+    border-radius: 12px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Messages */
+.message {
+    background-color: #8ee4af;
+    width: fit-content;
+    max-width: 70%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 20px;
+    word-wrap: break-word;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.message.left {
+    align-self: flex-start;
+    background-color: #ffcb77;
+}
+
+.message.right {
+    align-self: flex-end;
+    background-color: #88bbd6;
+}
+
+/* Form Container */
+#send-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Message Input */
+#messageinput {
+    flex: 1; /* Take remaining space */
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    height: 50px;
+    width: 75%;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+#messageinput:focus {
+    border-color: #6d27ef;
+}
+
+/* Send Button */
+.btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px; /* Square button */
+    height: 50px;
+    width: 60px; /* Adjusted width */
+    background-color: #6d27ef;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5321b9;
+}
